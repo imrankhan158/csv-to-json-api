@@ -15,7 +15,7 @@ const processBatch = async (batch) => {
   try {
     const values = batch.map((record) => {
       // Extract relevant data from each record
-      const { name, age, address, gender, ...additionalInfo } = record;
+      const { name, age, address, ...additionalInfo } = record;
       const firstName = name.firstName || "";
       const lastName = name.lastName || "";
       const addressJSON = address;
